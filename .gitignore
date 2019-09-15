@@ -1,0 +1,6 @@
+# Data Folders #
+######################
+data/
+# OS generated files #
+######################
+.DS_Store
