@@ -12,3 +12,9 @@ An AI project to use state-of-the-art neural networks to detect prarie burrows i
 2. Oh, such a cool raccoon detector :) [Link](https://github.com/datitran/raccoon_dataset) 
 3. LabelImg for image annotation. [Link](https://github.com/tzutalin/labelImg)
 4. Tensorflow Object Detection API [Link](https://github.com/tensorflow/models/tree/master/research/object_detection)
+
+
+
+## Code Shenanigans:
+
+1. transform_files.py -> Python foo to easily map and correlate the annotated xml files to the corresponding image. Dump images and annotated files as specified in `src_images` and `src_annotated` variables.
