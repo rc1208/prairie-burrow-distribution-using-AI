@@ -11,3 +11,4 @@ An AI project to use state-of-the-art neural networks to detect prarie burrows i
 1. The main motivation found from this Medium article: [Link](https://towardsdatascience.com/creating-your-own-object-detector-ad69dda69c85)
 2. Oh, such a cool raccoon detector :) [Link](https://github.com/datitran/raccoon_dataset) 
 3. LabelImg for image annotation. [Link](https://github.com/tzutalin/labelImg)
+4. Tensorflow Object Detection API [Link](https://github.com/tensorflow/models/tree/master/research/object_detection)
