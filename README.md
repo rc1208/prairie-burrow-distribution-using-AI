@@ -17,4 +17,4 @@ An AI project to use state-of-the-art neural networks to detect prarie burrows i
 
 ## Code Shenanigans:
 
-1. transform_files.py -> Python foo to easily map and correlate the annotated xml files to the corresponding image. Dump images and annotated files as specified in `src_images` and `src_annotated` variables. Finally, it dumps the annotated images in `data/images/` and annotated files in `data/tagged` 
+1. `transform_files.py` -> Python foo to easily map and correlate the annotated xml files to the corresponding image. Dump images and annotated files as specified in `src_images` and `src_annotated` variables. Finally, it dumps the annotated images in `data/images/` and annotated files in `data/tagged` 
