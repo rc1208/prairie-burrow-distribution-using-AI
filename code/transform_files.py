@@ -1,6 +1,7 @@
 __author__ = "Rahul Chowdhury"
 
 import os
+import re
 import shutil
 
 class TransformFiles:
@@ -40,6 +41,17 @@ class TransformFiles:
 
            #copy xml file to tagged/
            shutil.copyfile(self.src_annotated+file,self.tagged_dir+file)
+
+           #replace the contents of the <filename> tag in the xml file with proper name
+           with open(self.tagged_dir+file) as f:
+
+                readText = f.read()
+                newText = re.sub(r"<filename>.*</filename>", "<filename>"+ str(i) + ".jpg" + "</filename>", readText)
+
+           with open(self.tagged_dir+file, "w") as f:
+                f.write(newText)
+
+
            #rename the file
            os.rename(self.tagged_dir+file,self.tagged_dir + str(i) + ".xml")
 
