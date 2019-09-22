@@ -17,7 +17,7 @@
 
 ## Code Shenanigans:
 
-1. `transform_files.py` -> Python foo to easily map and correlate the annotated xml files to the corresponding image. Dump images and annotated files as specified in `src_images` and `src_annotated` variables. Finally, it dumps the annotated images in `data/images/` and annotated files in `data/tagged` 
+1. `transform_files.py` -> Python foo to easily map and correlate the annotated xml files to the corresponding image. Dump images and annotated files as specified in `src_images` and `src_annotated` variables. Also, makes sure that the `<filename></filename>` tag in the xml file has the corresponding consistent file name. Finally, it dumps the annotated images in `data/images/` and annotated files in `data/tagged` 
 
 2. `split_data.py` -> *Usage: python split_data.py split_ratio* Example: `python split_data.py .80` will split the data and annotated folders into 80% and 20% for training and testing purposes and dump them into respective folders -> `['images_train','images_test','tagged_train','tagged_test']`
 
