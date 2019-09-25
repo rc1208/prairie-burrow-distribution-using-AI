@@ -28,3 +28,5 @@ Example: `python split_data.py .80` will split the data and annotated folders in
 4. `generate_tfrecord.py` -> Adopted this guy from this awesome raccoon detector project [Check it out!](https://github.com/datitran/raccoon_dataset). This code will create the TFRecords for each data point in our training and testing data set. To read more why this step is essential, read more about TFRecords [here](https://medium.com/mostly-ai/tensorflow-records-what-they-are-and-how-to-use-them-c46bc4bbb564) <br />
 *Usage: python generate_tfrecord.py --csv_input=../data/tagged_train_labels.csv --image_dir=../data/images_train/ --output_path=../data/train.record <br />
 python generate_tfrecord.py --csv_input=../data/tagged_test_labels.csv --image_dir=../data/images_test/ --output_path=../data/test.record*
+
+5. To train the model -> `python model_main.py --logtostderr --train_dir=../../data/training/ --pipeline_config_path=../../data/training/faster_rcnn_inception_v2_pets.config` NOTE: Facing issues here of conversion of sparse matrix into dense matrix.
