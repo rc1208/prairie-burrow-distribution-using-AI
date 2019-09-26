@@ -1,5 +1,7 @@
 # prarie-burrow-distribution-using-AI
+<p align="center">
 <img src="https://github.com/rc1208/prarie-burrow-distribution-using-AI/blob/master/Wikipedia-Black-Tailed_Prairie_Dog.jpg" width="500">
+</p>
 
 > An AI project to leverage state-of-the-art neural networks to detect prarie burrows in aerial images. Project undertaken at   University of Colorado, Boulder for [Laboratory for Interdisciplinary Statistical Analysis](https://www.colorado.edu/lab/lisa/). For more information, contact:
 > 1. Patricia Todd <pato7216@colorado.edu>
