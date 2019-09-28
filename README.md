@@ -19,6 +19,10 @@
 4. Tensorflow Object Detection API [Link](https://github.com/tensorflow/models/tree/master/research/object_detection)
 
 
+## Installation: 
+Ensure all of these installation steps are followed: [Link](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md)
+
+
 
 ## Code Shenanigans:
 
