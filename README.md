@@ -33,4 +33,4 @@ Example: `python split_data.py .80` will split the data and annotated folders in
 *Usage: python generate_tfrecord.py --csv_input=../data/tagged_train_labels.csv --image_dir=../data/images_train/ --output_path=../data/train.record <br />
 python generate_tfrecord.py --csv_input=../data/tagged_test_labels.csv --image_dir=../data/images_test/ --output_path=../data/test.record*
 
-5. To train the model -> `python model_main.py --logtostderr --train_dir=../../data/training/ --pipeline_config_path=../../data/training/faster_rcnn_inception_v2_pets.config` NOTE: Facing issues here of conversion of sparse matrix into dense matrix.
+5. To train the model -> `python train.py --logtostderr --train_dir=../../data/training/ --pipeline_config_path=../../data/training/faster_rcnn_inception_v2_pets.config`
