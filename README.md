@@ -1,4 +1,8 @@
 # prarie-burrow-distribution-using-AI
+<p align="center">
+<img src="https://github.com/rc1208/prarie-burrow-distribution-using-AI/blob/master/Wikipedia-Black-Tailed_Prairie_Dog.jpg" width="300">
+</p>
+
 > An AI project to leverage state-of-the-art neural networks to detect prarie burrows in aerial images. Project undertaken at   University of Colorado, Boulder for [Laboratory for Interdisciplinary Statistical Analysis](https://www.colorado.edu/lab/lisa/). For more information, contact:
 > 1. Patricia Todd <pato7216@colorado.edu>
 > 2. Rahul Chowdhury <rach4930@colorado.edu>
@@ -15,6 +19,10 @@
 4. Tensorflow Object Detection API [Link](https://github.com/tensorflow/models/tree/master/research/object_detection)
 
 
+## Installation: 
+Ensure all of these installation steps are followed: [Link](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md)
+
+
 
 ## Code Shenanigans:
 
@@ -29,4 +37,4 @@ Example: `python split_data.py .80` will split the data and annotated folders in
 *Usage: python generate_tfrecord.py --csv_input=../data/tagged_train_labels.csv --image_dir=../data/images_train/ --output_path=../data/train.record <br />
 python generate_tfrecord.py --csv_input=../data/tagged_test_labels.csv --image_dir=../data/images_test/ --output_path=../data/test.record*
 
-5. To train the model -> `python model_main.py --logtostderr --train_dir=../../data/training/ --pipeline_config_path=../../data/training/faster_rcnn_inception_v2_pets.config` NOTE: Facing issues here of conversion of sparse matrix into dense matrix.
+5. To train the model -> `python train.py --logtostderr --train_dir=../../data/training/ --pipeline_config_path=../../data/training/faster_rcnn_inception_v2_pets.config`
