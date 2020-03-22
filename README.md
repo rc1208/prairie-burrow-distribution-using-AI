@@ -40,3 +40,5 @@ Example: `python split_data.py .80` will split the data and annotated folders in
 * `python generate_tfrecord.py --csv_input=../data/tagged_test_labels.csv --image_dir=../data/images_test/ --output_path=../data/test.record`
 
 5. To train the model -> `python train.py --logtostderr --train_dir=../../data/training/ --pipeline_config_path=../../data/training/faster_rcnn_inception_v2_pets.config`
+
+6. Export Inference Graph -> [Run from the main directory] `python object_detection/export_inference_graph.py --input_type image_tensor --pipeline_config_path data/training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix data/training/model.ckpt-19868  --output_directory inference_graph` [Note: Use the export_inference_graph inside object_detection folder under the root directory and not in the slim directory as this one has an option to take the --output_directory flag]
