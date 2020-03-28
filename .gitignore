@@ -1,6 +1,8 @@
 # Data Folders #
 ######################
-data/
+data/*
+!data/training
+data/training/*
 !data/training/labelmap.pbtxt
 !data/training/faster_rcnn_inception_v2_pets.config
 # OS generated files #
