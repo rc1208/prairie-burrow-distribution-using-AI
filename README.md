@@ -20,6 +20,9 @@
 ## Installation: 
 Ensure all of these installation steps are followed: [Link](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md)
 
+## Analysis
+All analysis currently done on this Jupyter notebook:  [Link](https://github.com/rc1208/prarie-burrow-distribution-using-AI/blob/master/object_detection/prarie-burrow-notebook-results.ipynb)
+
 
 
 ## Code Shenanigans:
