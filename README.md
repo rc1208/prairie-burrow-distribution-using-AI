@@ -43,3 +43,9 @@ Example: `python split_data.py .80` will split the data and annotated folders in
 5. To train the model -> `python object-detection/train.py --logtostderr --train_dir=../../data/training/ --pipeline_config_path=../../data/training/faster_rcnn_inception_v2_pets.config`
 
 6. Export Inference Graph -> [Run from the main directory] `python object_detection/export_inference_graph.py --input_type image_tensor --pipeline_config_path data/training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix data/training/model.ckpt-{model_number}  --output_directory inference_graph` [Note: model_number here is the last model saved in the training folder. Use the export_inference_graph inside object_detection folder under the root directory and not in the slim directory as this one has an option to take the --output_directory flag]
+
+
+
+### Helper Code:
+
+1. `remove_no_burrows_xml_files.py path_to_folder empty_list` -> Ignore xml files with no annotation for training purposes -> *Usage: python remove_no_burrows_xml_files.py ../data/Annotated_2018/ [0,4,9,14,24,49,59,69,74,84,94,99,104,109,114,199]*
