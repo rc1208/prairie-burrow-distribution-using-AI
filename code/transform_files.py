@@ -65,7 +65,7 @@ class TransformFiles:
 
 
 # place variables here -> (downloaded image folder, downloaded annotated folder, dumping image folder, dumping annotated folder)
-obj = TransformFiles("../data/2018/", "../data/Annotated_2018/", "../data/images/", "../data/tagged/")
+obj = TransformFiles("../data/2018/", "../data/clean_annotated/", "../data/images/", "../data/tagged/")
 obj.cleanFolders()
 obj.createFolders()
 obj.copyAndRenameFiles()
