@@ -53,3 +53,8 @@ Example: `python split_data.py .80` will split the data and annotated folders in
 1. `remove_no_burrows_xml_files_by_reading_list.py path_to_folder empty_list` -> Ignore xml files with no annotation for training purposes -> *Usage: python remove_no_burrows_xml_files_by_reading_list.py ../data/Annotated_2018/ [0,4,9,14,24,49,59,69,74,84,94,99,104,109,114,199]*
 
 2. `remove_no_burrows_xml_files_by_reading_xml` -> Ignore xml files with no annotation for training purposes by reading the xml files -> *Usage: python remove_no_burrows_xml_files_by_reading_xml.py ../data/Annotated_2018/*
+
+### Code Visualization:
+<p align="left">
+<img src="https://github.com/rc1208/prarie-burrow-distribution-using-AI/blob/master/resources/data_transformation.jpg" width="300">
+</p>
