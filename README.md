@@ -1,4 +1,4 @@
-# prarie-burrow-distribution-using-AI
+# prairie-burrow-distribution-using-AI
 <p align="center">
 <img src="https://github.com/rc1208/prarie-burrow-distribution-using-AI/blob/master/resources/Wikipedia-Black-Tailed_Prairie_Dog.jpg" width="300">
 </p>
